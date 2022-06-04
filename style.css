@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
     background-color: rgb(246, 246, 246);
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 h1{
     font-size: 40px;
@@ -19,14 +21,19 @@ main{
     flex-direction: column;
     margin-top: 30px;
 }
+.title,.pages,.author{
+    padding: 5px;
+    font-size: larger;
+    border-radius:5px;
+}
 .inp{
     display: flex;
     flex-direction: column;
 }
 .newbook{
     display:flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content:space-around;
+    
     
 }
 table{
@@ -35,10 +42,68 @@ table{
     
 }
 table,th,td{
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     border-collapse: collapse;
     padding: 10px;
 }
 td{
     text-align: center;
+}
+input#isRead{
+    height:20px;
+    width: 20px;
+}
+.del{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: lightcoral;
+    color: white;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+.stat{
+    border-radius: 10px;
+    padding: 5px;
+    width: 60px;
+    background-color: lightblue;
+    color: black;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+.addNew{
+    border-radius: 10px;
+    width: max-content;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: lightslategray;
+    transition: 0.3s;
+    color:white;
+}
+a{
+    position: absolute;
+    left: 50px;
+    color: black;
+    transition:0.4s ease-in-out;
+    
+}
+a:hover{
+     transform:scale(1.5);
+     
+}
+i {
+    
+    font-size: 60px;
+}
+.del:hover{
+    background-color: red;
+}
+.stat:hover{
+    background-color: aqua;
+}
+.addNew:hover{
+    background-color: azure;
+    color:black;
+}
+tbody>tr:nth-child(odd){
+    background-color: rgb(230, 233, 234);
 }

@@ -23,7 +23,6 @@ table.addEventListener('click',(e)=>{
       if(e.target.classList.contains("stat")){
           changeStat(findBookIndex(myLibrary,curr.innerText));
       }
-      console.log(e.target);
       showLibrary();
 });
 function addtoLibrary(){
@@ -31,7 +30,7 @@ function addtoLibrary(){
      let book = new createBook(title.value,author.value,pages.value,completed.checked);
      if(title.value===''||author.value===""||pages.value==="")
       {
-          alert("Please fill all fields");
+          alert("Please fill all the fields");
          
       }
      else  
